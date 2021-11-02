@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Verplichte metatags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous">
+</script>
+<!-- <script
+src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+crossorigin="anonymous">
+</script>
+<link rel="stylesheet"
+href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"> -->
+
+<script>   //Volgens W3C Markup validation hoef je geen type="text/Javascript" meer aan te geven in de Javascript script-tags
+$(document) .ready (function () {
+  $("#info") .hide();
+  $("#klik") .click(function() {
+    $("#info") .show();
+    $("#klik") .hide();
+  });
+});
+</script>
+<script>
+$(document) .ready (function () {
+  $("#minder") .hide();
+  $("#klik") .click(function() {
+    $("#minder") .show();
+  });
+});
+</script>
+<script>
+$(document) .ready (function () {
+  $("#minder") .click(function() {
+    $("#klik") .show();
+    $("#info") .hide();
+    $("#minder") .hide();
+  });
+});
+</script>
+<title>Huiswerkoefening_H25</title>
+</head>
+<body>
+<div>
+<button id="klik"> Klik hier voor meer informatie </button>
+<button id="minder"> Klik hier voor minder informatie </button>
+<div id="info">
+<img src="afbeeldingen/Grote_Oranjebekerzwam.jpg" alt="foto van Grote Oranjebekerzwam" width="400">
+<p> Dit is een Grote Oranjebekerzwam </p>
+</div>
+</div>
+  <noscript>
+  Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+  </noscript>
+</body>
+</html>
